@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_GameOver"
+    android:background="@drawable/bckg_game_over" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+     
+  
+    <Button
+        android:id="@+id/btn_NewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/new_game_btn_bckg" />
+<Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/btn_NewGame"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/menu_btn_bckg" />
+    
+    <TextView
+        android:id="@+id/txt_Winners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" 
+        android:textColor="#5e739b"/>
+
+    
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_chooseLvl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bckg_choose"
+    android:orientation="vertical" >
+
+
+    <RadioGroup 
+        android:id="@+id/radiobtn_choose_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center" >
+
+        <RadioButton
+            android:id="@+id/rbtn_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Easy" 
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:textColor="#000"
+            android:text="Medium"
+            android:checked="true"  />
+
+        <RadioButton
+            android:id="@+id/rbtn_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Hard" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/next_btn_bckg" />
+
+</LinearLayout>

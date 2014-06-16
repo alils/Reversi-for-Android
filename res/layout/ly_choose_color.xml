@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_ChooseColor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bckg_choose"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radiobtn_choose_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/choose_white_xml"
+            android:button="@null"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rb_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/choose_black_xml"
+            android:button="@null" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/next_btn_bckg" />
+<RelativeLayout
+     android:id="@+id/ly_checkabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/radiobtn_choose_color"  
+        
+        android:layout_centerHorizontal="true"       
+    >
+    <CheckBox
+        android:id="@+id/check_validMoves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_centerVertical="true"      
+        android:layout_marginTop="14dp"
+        android:checked="true" />
+    <TextView
+        android:id="@+id/txt_validMoves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"     
+        android:layout_centerVertical="true"
+        
+        android:layout_toRightOf="@+id/check_validMoves" 
+        android:text="Show valid moves"
+        android:textColor="#06499D"    />
+    </RelativeLayout>
+
+</RelativeLayout>
