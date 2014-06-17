@@ -103,6 +103,7 @@ public class Board {
 		for (int i = 0; i < getToFlip().size(); i++) {
 			if (getToFlip().get(i).equals(point)) {
 				getToFlip().remove(i);
+				break;
 			}
 
 		}
@@ -178,14 +179,15 @@ public class Board {
 	public boolean isGameOver() {
 		if (!hasValidMove(1) && !hasValidMove(-1)) {
 			return true;
-		} else {
-			for (int i = 0; i < 8; i++)
-				for (int j = 0; j < 8; j++) {
-					if (boardMatrix[i][j] == 0) {
-						return false;
-					}
+		} 
+			
+		for (int i = 0; i < 8; i++)
+			for (int j = 0; j < 8; j++) {
+				if (boardMatrix[i][j] == 0) {
+					return false;
 				}
-		}
+			}
+		
 		return true;
 	}
 }
